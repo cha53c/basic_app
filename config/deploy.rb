@@ -1,5 +1,6 @@
 # config valid only for Capistrano 3.1
-lock '3.2.1'
+#lock '3.2.1'
+lock '3.4.0'
 
 set :application, 'deploy_demo'
 set :repo_url, 'git@github.com:cha53c/basic_app.git'
