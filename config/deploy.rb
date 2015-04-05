@@ -38,6 +38,8 @@ set :repo_url, 'git@github.com:cha53c/basic_app.git'
 
 namespace :deploy do
 
+  before :deploy, 'setup:first_task'
+
   desc 'Restart application'
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
